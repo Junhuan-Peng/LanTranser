@@ -1,0 +1,10 @@
+/build
+/dist
+/main.spec
+/.idea
+/__pycache__
+resource/
+src/GUI/UI/__pycache__/
+src/GUI/__pycache__/
+src/NET/__pycache__/
+src/__pycache__/
