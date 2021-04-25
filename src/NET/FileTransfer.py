@@ -39,7 +39,7 @@ class FileSender:
         self.__soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # 固定端口号
         self.__soc.bind(("", 5555))
-        self.__soc.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
+        self.__soc.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         # 将主动套接字转为被动套接字
         self.__soc.listen(3)
         self.__file_path = file_path

@@ -39,7 +39,7 @@ class TabFragment(QtWidgets.QWidget):
 
         item = QtGui.QStandardItem(msg)
         if flag:
-            item.setTextAlignment(0x0002)  # 右对齐
+            item.setTextAlignment(QtCore.Qt.AlignLeft)  # 右对齐
         self.__model.appendRow(item)
 
         self.msg_list_view.scrollToBottom()
